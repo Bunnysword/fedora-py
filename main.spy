@@ -1,0 +1,97 @@
+print("Заходим в каталог со скриптами.")
+d = 'cd scripts/' # for shellpy
+print(d)
+
+#chm - chmod
+cmd = input("Даём права скриптам? ")
+Cmd = `chmod 750 cdf.sh rpmf.sh \
+ cdc.sh kl.sh dec.sh iap.sh \
+  cnf.sh fpk.sh nvdd.sh` # for shellpy `
+if cmd == "y":
+    print(Cmd)
+    print("Права скриптам даны.")
+else:
+    cmd = "n"
+    print("Права скриптам не даны..")
+    print(exit)
+
+cdf = input("Делаем конфигурацию DNF? ")
+Cdf = `./cdf.sh` # for shellpy
+if cdf == "y":
+    print(Cdf)
+    print("Конфигурация DNF сделана.")
+else:
+    cdf = "n"
+    print("Конфигурация DNF отменена..")
+
+rpmf = input("Включаем rpmfusion-репозитории? ")
+Rpmf = `./rpmf.sh` # for shellpy
+if rpmf == "y":
+    print(Rpmf)
+    print("Репозитории rpmfusion подключены")
+else:
+    rpmf = "n"
+    print("Репозитории rpmfusion не подключены..")
+    
+cdc = input("Ставим кодеки? ")
+Cdc = `./cdc.sh` # for shellpy
+if cdc == "y":
+    print(Cdc)
+    print("Кодеки установлены.")
+else:
+    cdc = "n"
+    print("Кодеки не установлены..")
+
+kl = input("Ставим кастомное ядро? ")
+Kl = `./kl.sh` # for shellpy
+if kl == "y":
+    print(Kl)
+    print("Кастомное ядро установлено.")
+else:
+    kl = "n"
+    print("Кастомное ядро не установлено..")
+  
+dec = input("Настроить окружение? ")
+Dec = `./dec.sh` # for shellpy
+if dec == "y":
+    print(Dec)
+    print("Окружение настроено.")
+else:
+    dec = "n"
+    print('Окружение не настроено..')
+
+iap = input("Установить программы? ")
+Iap = `./input.sh` # for shellpy
+if iap == "y":
+    print(Iap)
+    print("Программы установлены.")
+else:
+    iap = "n"
+    print("Программы не установлены..")
+
+cnf = input("Распределить конфиги? ")
+Cnf = `./cnf.sh` # for shellpy
+if cnf == "y":
+    print(Cnf)
+    print("Конфиги распределены.")
+else:
+    cnf = "n"
+    print("Конфиги не распределены..")
+    
+fpk = input("Установить приложение из flathub? ")
+Fpk = `./fpk.sh` # for shellpy
+if fpk == "y":
+    print(Fpk)
+    print("Программы установлены из flathub.")
+else:
+    fpk = "n"
+    print("Программы из flathub не установлены..")
+
+nvdd = input("Установить Nvidia-драйвер? ")
+Nvdd = `./nvdd.sh` # for shellpy
+if nvdd == "y":
+    print(Nvdd)
+    print("Nvidia-драйвер установлен.")
+else:
+    nvdd = "n"
+    print("Nvidia-драйвер не установлен..")                             
